@@ -18,6 +18,9 @@
 		D073F338296C5E3400E25426 /* tic_tac_toe_plus_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D073F337296C5E3400E25426 /* tic_tac_toe_plus_OCTests.m */; };
 		D073F342296C5E3400E25426 /* tic_tac_toe_plus_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D073F341296C5E3400E25426 /* tic_tac_toe_plus_OCUITests.m */; };
 		D073F344296C5E3400E25426 /* tic_tac_toe_plus_OCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D073F343296C5E3400E25426 /* tic_tac_toe_plus_OCUITestsLaunchTests.m */; };
+		D073F353296C5F1C00E25426 /* Chessboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D073F352296C5F1C00E25426 /* Chessboard.m */; };
+		D073F356296C61C000E25426 /* CellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = D073F355296C61C000E25426 /* CellRow.m */; };
+		D073F359296C6FEB00E25426 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D073F358296C6FEB00E25426 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		D073F33D296C5E3400E25426 /* tic-tac-toe-plus-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic-tac-toe-plus-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D073F341296C5E3400E25426 /* tic_tac_toe_plus_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tic_tac_toe_plus_OCUITests.m; sourceTree = "<group>"; };
 		D073F343296C5E3400E25426 /* tic_tac_toe_plus_OCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tic_tac_toe_plus_OCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		D073F351296C5F1C00E25426 /* Chessboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chessboard.h; sourceTree = "<group>"; };
+		D073F352296C5F1C00E25426 /* Chessboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chessboard.m; sourceTree = "<group>"; };
+		D073F354296C61C000E25426 /* CellRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellRow.h; sourceTree = "<group>"; };
+		D073F355296C61C000E25426 /* CellRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellRow.m; sourceTree = "<group>"; };
+		D073F357296C6FEB00E25426 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D073F358296C6FEB00E25426 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,7 @@
 		D073F317296C5E3200E25426 /* tic-tac-toe-plus-OC */ = {
 			isa = PBXGroup;
 			children = (
+				D073F350296C5EA200E25426 /* GameCore */,
 				D073F318296C5E3200E25426 /* AppDelegate.h */,
 				D073F319296C5E3200E25426 /* AppDelegate.m */,
 				D073F31B296C5E3200E25426 /* SceneDelegate.h */,
@@ -137,6 +147,19 @@
 				D073F343296C5E3400E25426 /* tic_tac_toe_plus_OCUITestsLaunchTests.m */,
 			);
 			path = "tic-tac-toe-plus-OCUITests";
+			sourceTree = "<group>";
+		};
+		D073F350296C5EA200E25426 /* GameCore */ = {
+			isa = PBXGroup;
+			children = (
+				D073F351296C5F1C00E25426 /* Chessboard.h */,
+				D073F352296C5F1C00E25426 /* Chessboard.m */,
+				D073F354296C61C000E25426 /* CellRow.h */,
+				D073F355296C61C000E25426 /* CellRow.m */,
+				D073F357296C6FEB00E25426 /* Player.h */,
+				D073F358296C6FEB00E25426 /* Player.m */,
+			);
+			path = GameCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D073F359296C6FEB00E25426 /* Player.m in Sources */,
 				D073F32E296C5E3400E25426 /* main.m in Sources */,
 				D073F326296C5E3200E25426 /* tic_tac_toe_plus_OC.xcdatamodeld in Sources */,
 				D073F320296C5E3200E25426 /* ViewController.m in Sources */,
 				D073F31A296C5E3200E25426 /* AppDelegate.m in Sources */,
 				D073F31D296C5E3200E25426 /* SceneDelegate.m in Sources */,
+				D073F353296C5F1C00E25426 /* Chessboard.m in Sources */,
+				D073F356296C61C000E25426 /* CellRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
